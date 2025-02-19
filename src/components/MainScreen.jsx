@@ -19,7 +19,7 @@ const MainScreen = () => {
       });
       dispatch(addUser(response?.data));
     } catch (err) {
-      console.log("Error = ", err);
+      console.error(err);
       if (err.status === 401) {
         navigate("/login");
       }
