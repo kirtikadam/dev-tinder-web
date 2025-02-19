@@ -2,3 +2,10 @@
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark, lemonade;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
