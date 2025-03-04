@@ -33,11 +33,11 @@ const Connections = () => {
       {isEmpty(connectionsList) ? (
         <div>There are no connections!</div>
       ) : (
-        connectionsList.map((connection, index) => {
-          const { firstName, lastName, photoURL, age, gender, about } =
+        connectionsList.map((connection) => {
+          const { _id, firstName, lastName, photoURL, age, gender, about } =
             connection;
           return (
-            <div key={index} className="flex m-4 p-4 bg-base-200 rounded-lg w-1/2">
+            <div key={_id} className="flex m-4 p-4 bg-base-200 rounded-lg w-1/2">
               <img src={photoURL} className="w-20 h-20 rounded-full" />
               <div className="m-4 text-left">
                 <h2 className="text-bold text-xl">
