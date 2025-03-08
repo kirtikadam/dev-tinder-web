@@ -54,9 +54,6 @@ const Requests = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log("showToast = ", showToast)
-  console.log("condition = ", showToast.toast && showToast.status === "accepted")
-
   if (!requests) return;
 
   if (requests.length === 0)
